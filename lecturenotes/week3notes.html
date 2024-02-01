@@ -2,23 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <titile>Week 3 Notes</titile>
+        <titile>Unit 3 Notes</titile>
     </head>
     <body>
-        <h1>Attributes, Links and Embedding</h1>
-        <a href="#example">Bookmark Link Example</a>
+        <h1 id="top">Unit 3</h1>
         <h2>Links</h2>
-        <!-- when you are linking off site you need http -->
-        <a href="http://www.google.com">This is my link to Google</a>
-        <!-- href is our attribute name and the url is the value -->
-        <h2>Pathing</h2>
-        <h3>Pathing to File in Same Directory</h3>
+        <h3>External Link</h3>
+        <!-- these links go to another website -->
+        <!-- don't forget http:// -->
+        <a href="http://www.amazon.com">Amazon</a>
+        <h3>Relative Link</h3>
+        <!-- these links go to a page on your website -->
         <a href="week2activity.html">Week 2 Notes</a>
-        <h3 id="example">Pathing to File in Another Directory</h3>
-        <a href="../labs/lab01/papir-bio.html">Lab 1 Bio</a>
-        <h2>Embedding</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=kN19uOPSec6b1C0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Relative Link Outside The Folder</h3>
+        <!-- this one paths to a folder and goes one level up and then down to lab01 -->
+        <a href="../lab01/papir-bio.html">Lab 1</a>
+        <h3>Bookmark Links</h3>
+        <!-- part 1 of 2 of our bookmark -->
+        <a href="#top">Return To Top</a>
         <h2>Images</h2>
-        <img src="../images/ottotheorange.jpeg" alt="otto mascot">
+        <img src="../images/ottotheorange.jpeg" alt="vintage otto">
+        <!-- href is our attribute name and the url is the value -->
+        <h3>Embedding</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=kN19uOPSec6b1C0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </body>
 </html>
