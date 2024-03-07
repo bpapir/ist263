@@ -1,5 +1,5 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-h1, h2 {color:aqua}
-.evenrow {color:aliceblue}
+h1, h2 {color:aqua;}
+.evenrow {color: purple;}
 h1 {font-size: x-large;}
-h2 {font-size: x-small;}
+h2 {font-size: small;}

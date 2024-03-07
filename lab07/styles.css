@@ -2,6 +2,7 @@ body {
     color: #0000ff;
     background-color: #b087b0;
 }
+head {color: #00ffbb;}
 text {color: #b67cfb;}
 a:hover {color: #f000ef;}
 nav {background-color: #b087b0;}
