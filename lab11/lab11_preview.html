@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+<style>
+    .container {
+        display: flex;
+    }
+    #first {order: 1;}
+    #second {order: 2;}
+    #third {order: 3;}
+</style>
+    <script>
+    function WinnerMessage () {
+        document.getElementById("messages").innerHTML = 'You Won!';
+    }
+    function TryAgain () {
+        document.getElementById("messages").innerHTML = 'Wrong Shell - Try Again';
+    }
+    function ShuffleShells() {
+        document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+    }
+    </script>
+</head>
+<body onload="ShuffleShells();">
+    <h1>Choose a Dog</h1>
+<div class="container">
+    <img src="../images/dogphoto.jpeg" id="first" alt="first dog" onclick="WinnerMessage();">
+    <img src="../images/dogphoto.jpeg" id="second" alt="second dog" onclick="TryAgain();"> 
+    <img src="../images/dogphoto.jpeg" id="third" alt="third dog" onclick="TryAgain();">
+</div>
+    <div id="messages"></div>
+</body>
+</html>

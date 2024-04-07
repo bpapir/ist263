@@ -7,21 +7,21 @@
     <style>
         nav {
             display: flex;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             background-color: #000000;
             padding: 10px;
             color: #ffffff;
             margin-bottom: 20px;
 
         }
-        div {
-            padding: 5px;
-        }
+        nav div {padding: 5px;}
+        .flexend {justify-content: flex-end;}
+        .spacearound {justify-content: space-around;}
         .nav1 {justify-content: flex-end;}
         .nav2 {justify-content: space-around;}
         .nav3 {justify-content: space-between;}
+        .split, .leftside, .rightside {justify-content: space-between;}
         .split {justify-content: space-between;}
-
-        .split div {display: flex;}
     </style>
 </head>
 <body>
@@ -51,15 +51,15 @@
 
         <h2>Split Navigation</h2>
         <nav class="split">
-        <div>
+        <div class="leftside">
             <div>Home</div>
             <div>About Us</div>
             <div>Products</div>
             <div>Contact</div>
         </div>
-        <div>
+        <div class="rightside">
             <div>Facebook</div>
-            <div>Twitter</div>
+            <div>Instagram</div>
         </div>
         </nav>
     </nav>
