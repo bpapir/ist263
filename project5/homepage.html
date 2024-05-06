@@ -4,23 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful Havoc</title>
+    <script>
+        function clicky () {
+    alert("This is $not. He is an artist that exemplifies the true defenition of fashion and music. He features his clothing brand as well as his collabs that come along with smaller artists. He has done work with many artists who exmplify the true defenition of fashion, and have made a large name for themselves.");
+    }
+    </script>
     <style>
 .title {
     color: #574208;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 .snot {
     padding: 10px;
     display:flex;
     border: 2px solid #bfb0;
+    flex: 1;
 }
 .text {
-    background-color: #595959;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+}
+.sites {
+    text-align: center;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td, th {border: 3px solid green}
+.table {
+    justify-content: space-between;
 }
     </style>
 </head>
 <body>
-    <h1 class="title">Beautiful Havoc</h1><br>
+    <h1 class="title">Beautiful Havoc</h1>
+    <div class="sites">
+        <a href="../project5/homepage.html" class="skip-to-content">Home</a>
+        <a href="../project5/fashion.html" class="skip-to-content">Fashion</a>
+        <a href="../project5/music.html" class="skip-to-content">Music</a><br>
+    </div>
+    </div>
     <p class="text">Beautiful Havoc covers music and fashion. Our goal here is to show everyone the culture revolving around these topics and educate people on trending topics. As controversial as some topics may be, that’s what we are here to spark. The world’s culture is changing by the second and we are here to cover this and give you updates daily! From every genre, we are giving full coverage on concerts, new music, collaborations, and more!</p>
-    <img src="../images/snotphoto.jpeg" alt="snot">
+    <img id="snot" onmouseover="clicky();" src="../images/resizesnotphoto.png" alt="snot"> 
+    <table class="table">
+        <caption>Best Influencers Who Are Similar</caption>
+        <tr>
+            <th>Music</th>
+            <th>Fashion</th>
+        </tr>
+        <tr>
+            <td>Kendrick Lamar</td>
+            <td>Dave Free</td>
+        </tr>
+        <tr>
+            <td>Ken Carson</td>
+            <td>Bol Bol</td>
+        </tr>
+        <tr>
+            <td>Pharrell</td>
+            <td>Nigo</td>
+        </tr>
+    </table>
 </body>
+<hr>
+        &copy; 2024 Beautiful Havoc
 </html>
